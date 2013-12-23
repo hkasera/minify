@@ -6,7 +6,9 @@ __License__ - GPLv2/MIT
 
 
 #Introduction
-A python script to minify jss and css files on the fly using yui compressor
+A python script to minify jss and css files on the fly using yui compressor.
+
+Website - [http://hkasera.github.io/minify/](http://hkasera.github.io/minify/)
 
 #Usage
 <pre>minify.py [-h] [--all | --js | --css | --clear]</pre>
