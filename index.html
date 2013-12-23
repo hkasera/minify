@@ -1,1 +1,104 @@
-Minify version 1.0
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minify</title>
+<style>
+body{
+padding:0;
+margin:0;
+font-family: Tahoma;
+background:whitesmoke;
+}
+a{
+text-decoration:none;
+}
+.min-forkme{
+color: white;
+background: black;
+display: inline-block;
+padding: 10px;
+position: fixed;
+top: 10px;
+right: 0px;
+}
+.min-forkme a{
+color: white;
+}
+header{
+
+text-align: center;
+height: 150px;
+background: #413D70;
+
+}
+header .min-title{
+font-size: 72px;
+color:whitesmoke;
+}
+header .min-subtitle{
+font-size: 36px;
+color:whitesmoke;
+}
+section.min-section{
+width:960px;
+margin: 0 auto;
+padding:10px;
+text-align:left;
+color:#413D70;
+}
+.min-subsection{
+padding:5px 0 20px;
+}
+.min-head-1{
+padding: 10px 0 0;
+font-weight: bold;
+}
+.min-sub-header{
+font-size: 30px;
+padding: 5px 0;
+}
+footer{
+position:fixed;
+display:block;
+bottom:0;
+text-align: center;
+height: 50px;
+width:100%;
+background: #413D70;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="min-title">Minify</div>
+<div class="min-subtitle">JS and CSS minification on the fly</div>
+</header>
+<div class="min-forkme"><a href="https://github.com/hkasera/minify">Fork me on github</a></div>
+<section class="min-section">
+<div class="min-subsection">
+<div class="min-sub-header">Introduction</div>
+<div class="min-sub-content">A python script to minify jss and css files on the fly using yui compressor.</div>
+</div>
+<div class="min-subsection">
+<div class="min-sub-header">Usage</div>
+<div>minify.py [-h] [--all | --js | --css | --clear]</div>
+<div>
+<div class="min-head-1">Optional Arguments :</div>
+<ul>
+<li> -h, --help   :   Show help message and exit</li>
+ <li>--all        :   Minify all js and css files</li>
+ <li>--js         :   Minify only js files</li>
+ <li>--css        :   Minify only css files</li>
+ <li>--clear      :   Clear all minified files</li>
+ </ul>
+</div>
+</div>
+<div class="min-subsection">
+<div class="min-sub-header">About</div>
+<div class="min-sub-content">This project is written by <a href="https://github.com/hkasera">Harshita Kasera</a>.</div>
+</div>
+</section>
+<!--<footer>
+</footer>-->
+</body>
+</html>
