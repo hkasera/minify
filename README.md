@@ -31,6 +31,7 @@ describe input and output paths
 </pre>
 
 <pre>$> python minify.py --all</pre>
+<pre>$> python minify.py --jspath "/Users/hkasera/Downloads/" --opath "/Users/hkasera/Desktop/" </pre>
 
 #Output 
 ![Sample output](https://raw.github.com/hkasera/minify/master/help/Output.png "Sample Output")
