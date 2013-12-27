@@ -30,7 +30,7 @@ retval = os.getcwd()
 total_warnings = 0
 total_errors = 0
 
-print ("Minification script started") 
+
 
 def logErrorWarning(filepath):
 	global total_warnings
@@ -73,7 +73,7 @@ def minifyJs():
 
 	logfile = open(jsMinPath + "/log/fulllog.txt", 'w')
 
-	logfile.write('Minify script started for internal js files\n')
+	logfile.write('Minify script started for js files\n')
 	
 
 	os.chdir(jsMinPath)
@@ -90,8 +90,8 @@ def minifyJs():
 
 	jscontents = os.listdir(jsDevPath)
 	
-	logfile.write("Compressing internal js files ")
-	logOutput("Compressing internal js files ")
+	logfile.write("Compressing js files ")
+	logOutput("Compressing js files ")
 
 	for i in jscontents:
 		if i.lower().endswith('.js'):
@@ -106,7 +106,7 @@ def minifyJs():
 			logErrorWarning(jsMinPath + "/log/" + i[0:-3] + ".log.txt")
 	
 	logfile.close()
-	logOutput("All internal js files minified")
+	logOutput("All js files minified")
 
 	
 def minifyCss():
@@ -176,12 +176,43 @@ def printsummary():
 	print ("-------------------------------------------------")
 
 parser = argparse.ArgumentParser()
+group2 = parser.add_argument_group('group2', 'group2 description')
+
 group1 = parser.add_mutually_exclusive_group()
 group1.add_argument("--all",help="Minify all files",action="store_true")
 group1.add_argument("--js",help="Minify all js files",action="store_true")
 group1.add_argument("--css",help="Minify all css files",action="store_true")
 group1.add_argument("--clear",help="Clear existing files in min",action="store_true")
+
+group2.add_argument("--jspath", help="Path for js files")
+group2.add_argument("--csspath", help="Path for css files")
+group2.add_argument("--opath", help="Path for output")
 args = parser.parse_args()
+if args.jspath:
+    if os.path.isdir(args.jspath):
+        jsDevPath = args.jspath
+    else:
+        print "\033[1;31m"+ "The path specified for js is not valid"+"\033[1;m"
+        exit(0)
+
+
+if args.csspath:
+    if os.path.isdir(args.csspath):
+        cssDevPath = args.csspath
+    else:
+        print "\033[1;31m"+ "The path specified for css is not valid"+"\033[1;m"
+        exit(0)
+
+if args.opath:
+    if os.path.isdir(args.opath):
+        cssMinPath = args.opath + '/'+cssMinPath
+        jsMinPath = args.opath + '/' + jsMinPath
+    else:
+        print "\033[1;31m"+ "The path specified for output is not valid"+"\033[1;m"
+        exit(0)
+
+print "Minification script started" 
+
 if args.all:
 	minifyAll()
 elif args.js:
@@ -191,8 +222,10 @@ elif args.css:
 elif args.clear:
 	print "Clear files"
 
+    
 
-if not len(sys.argv) > 1:
+
+if not len(sys.argv) > 1 or (args.all) or (not args.js and not args.css and not args.clear):
 	minifyAll()
 
 end_time = time.time()
