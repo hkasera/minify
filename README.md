@@ -26,8 +26,8 @@ Paths :
 describe input and output paths
 <pre>
 --jspath JSPATH   : Path for js files
---csspath CSSPATH : Path for js files
---opath OPATH     : Path for js files
+--csspath CSSPATH : Path for css files
+--opath OPATH     : Path for output files
 </pre>
 
 <pre>$> python minify.py --all</pre>
