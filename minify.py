@@ -176,7 +176,7 @@ def printsummary():
 	print ("-------------------------------------------------")
 
 parser = argparse.ArgumentParser()
-group2 = parser.add_argument_group('group2', 'group2 description')
+group2 = parser.add_argument_group('Paths', 'specify input and output paths')
 
 group1 = parser.add_mutually_exclusive_group()
 group1.add_argument("--all",help="Minify all files",action="store_true")
