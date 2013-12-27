@@ -11,7 +11,7 @@ A python script to minify jss and css files on the fly using yui compressor.
 Website - [http://hkasera.github.io/minify/](http://hkasera.github.io/minify/)
 
 #Usage
-<pre>minify.py [-h] [--all | --js | --css | --clear]</pre>
+<pre>minify.py [-h] [--all | --js | --css | --clear] [--jspath JSPATH] [--csspath CSSPATH] [--opath OPATH]</pre>
 
 Optional Arguments :
 <pre>
@@ -20,6 +20,14 @@ Optional Arguments :
  --js         :   Minify only js files
  --css        :   Minify only css files
  --clear      :   Clear all minified files
+</pre>
+
+Paths :
+describe input and output paths
+<pre>
+--jspath JSPATH   : Path for js files
+--csspath CSSPATH : Path for js files
+--opath OPATH     : Path for js files
 </pre>
 
 <pre>$> python minify.py --all</pre>
