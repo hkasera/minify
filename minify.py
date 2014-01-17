@@ -236,7 +236,7 @@ if TOTAL_WARNINGS:
 else:
 	print "Total warnings " + str(TOTAL_WARNINGS)
 
-if TOTAL_WARNINGS:
+if TOTAL_ERRORS:
 	print "Total errors " + "\033[1;31m"+ str(TOTAL_ERRORS)+"\033[1;m"
 else:
 	print "Total errors " + str(TOTAL_ERRORS)
