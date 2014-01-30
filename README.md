@@ -2,7 +2,7 @@
 
 __Author__  - Harshita Kasera
 
-__License__ - GPLv2/MIT
+__License__ - MIT
 
 
 #Introduction
@@ -35,6 +35,10 @@ describe input and output paths
 
 #Output 
 ![Sample output](https://raw.github.com/hkasera/minify/master/help/Output.png "Sample Output")
+
+#License
+
+In case you find this useful, please feel free to use this in any way. You need to just make sure that you keep the copyright notice and license. (MIT)
 
 #Version History
 
