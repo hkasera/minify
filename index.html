@@ -1,52 +1,40 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Minify : A python script to minify jss and css files" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Minify</title>
+    <meta charset="UTF-8">
+    <title>Minify by hkasera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Minify</h1>
+      <h2 class="project-tagline">A python script to minify jss and css files</h2>
+      <a href="https://github.com/hkasera/minify" class="btn">View on GitHub</a>
+      <a href="https://github.com/hkasera/minify/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/hkasera/minify/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/hkasera/minify">View on GitHub</a>
-
-          <h1 id="project_title">Minify</h1>
-          <h2 id="project_tagline">A python script to minify jss and css files</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/hkasera/minify/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/hkasera/minify/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="minify---js-and-css-minification-on-the-fly" class="anchor" href="#minify---js-and-css-minification-on-the-fly"><span class="octicon octicon-link"></span></a>Minify - JS and CSS minification on the fly</h1>
+    <section class="main-content">
+      <h1>
+<a id="minify---js-and-css-minification-on-the-fly" class="anchor" href="#minify---js-and-css-minification-on-the-fly" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Minify - JS and CSS minification on the fly</h1>
 
 <p><strong>Author</strong>  - Harshita Kasera</p>
 
 <p><strong>License</strong> - MIT</p>
 
 <h1>
-<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h1>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h1>
 
 <p>A python script to minify jss and css files on the fly using yui compressor.</p>
 
 <p>Website - <a href="http://hkasera.github.io/minify/">http://hkasera.github.io/minify/</a></p>
 
 <h1>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
 
 <pre>minify.py [-h] [--all | --js | --css | --clear] [--jspath JSPATH] [--csspath CSSPATH] [--opath OPATH]</pre>
 
@@ -74,32 +62,29 @@ describe input and output paths</p>
 <pre>$&gt; python minify.py --jspath "/Users/hkasera/Downloads/" --opath "/Users/hkasera/Desktop/" </pre>
 
 <h1>
-<a name="output" class="anchor" href="#output"><span class="octicon octicon-link"></span></a>Output</h1>
+<a id="output" class="anchor" href="#output" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Output</h1>
 
 <p><img src="https://raw.github.com/hkasera/minify/master/help/Output.png" alt="Sample output" title="Sample Output"></p>
 
 <h1>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
 
 <p>In case you find this useful, please feel free to use this in any way. You need to just make sure that you keep the copyright notice and license. (MIT)</p>
 
 <h1>
-<a name="version-history" class="anchor" href="#version-history"><span class="octicon octicon-link"></span></a>Version History</h1>
+<a id="version-history" class="anchor" href="#version-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version History</h1>
 
 <p><strong>0.0</strong>
 Initial Release</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Minify maintained by <a href="https://github.com/hkasera">hkasera</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/hkasera/minify">Minify</a> is maintained by <a href="https://github.com/hkasera">hkasera</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
